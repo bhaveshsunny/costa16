@@ -28,12 +28,6 @@ h1{
 
 }
 
-#heading{
-
-	padding:10px;
-	text-align: center;
-}
-
 #main{
 	position: relative;
 	height:85%;
@@ -41,9 +35,113 @@ h1{
 	z-index: 0;
 }
 
+#leftpane{
+
+	height: 80%;
+	width: 50%;
+	float: left;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+
+#rightpane{
+
+	height: 80%;
+	width: 50%;
+	float: right;
+	padding: 0;
+	margin: 0;
+	position: relative;
+
+}
+
+#textbase{
+
+	width: 80%;
+	height: 100%;
+	float: left;
+	margin: 0;
+	padding: 0;
+	position: relative;
+
+}
+
+#imagestrip{
+
+	width: 20%;
+	height: 100%;
+	float: right;
+	margin: 0;
+	padding: 0;
+	position: relative;
+
+}
+
+#imagebase{
+
+	width: 80%;
+	height: 100%;
+	float: left;
+	margin: 0;
+	padding: 0;
+	position: relative;
+
+}
+
+#textstrip{
+
+	width: 20%;
+	height: 100%;
+	float: right;
+	margin: 0;
+	padding: 0;
+	position: relative;
+
+}
+
+#bot{
+
+	height:20%;
+	position: relative;
+	width: 100%;
+	clear:both;
+	padding: 0;
+	margin: 0;
+	bottom:0;
+}
+
 #display{
+	background("../img/back.png");
 	position: absolute;
 	height:100%;
 	width:100%;
-	z-index: 20;
+	z-index: -2;
+}
+
+.textele{
+
+	width:100%;
+	position: relative;
+	height: 20%;
+	margin: 0;
+	padding: 0;
+}
+
+.imgele{
+
+	width:100%;
+	position: relative;
+	height: 20%;
+	margin: 0;
+	padding: 0;
+
+}
+
+.layer{
+
+	height:100%;
+	width:100%;
+	margin: 0;
+	padding:0;
 }
