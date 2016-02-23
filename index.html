@@ -2,49 +2,163 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>BITS Connect</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<title>Costaa</title>
 	<link href='./css/style.css' rel='stylesheet' type='text/css'>
+ 	<!-- // <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
+ 	 <script src="./js/jquery.min.js"></script>
+ 	<script type="text/javascript" src="./js/typed.js">	</script>	
+	<script type="text/javascript" src="./js/jquery.simplyscroll.js"></script>
+	<script type="text/javascript" src="./js/data.js"></script>
+	<link rel="stylesheet" href="./js/jquery.simplyscroll.css" media="all" type="text/css">
+
+	<script type="text/javascript">
+	(function($) {
+		$(function() { //on DOM ready
+			$("#scroller").simplyScroll({
+				customClass: 'vert',
+				orientation: 'vertical',
+    	        auto: true,
+        	    autoMode: 'loop',
+				frameRate: 20,
+				speed: 5
+			});
+			$("#scrolle").simplyScroll({
+				customClass: 'vert',
+				orientation: 'vertical',
+    	        auto: true,
+        	    autoMode: 'loop',
+				frameRate: 20,
+				speed: 5
+			});
+			$("#hed").typed({
+				strings: ["","CostAA 2k16"],
+				typespeed: 0,
+				showCursor: false,
+				startDelay: 500
+			});		
+
+			 enter(0);	
+
+
+			$("#t1").click(function(){								
+				enter(0);
+			});
+			$("#t2").click(function(){			
+				enter(1);			
+			});
+			$("#t3").click(function(){					
+				enter(2);				
+			});
+			$("#t4").click(function(){		
+				enter(3);			
+			});
+			$("#t5").click(function(){			
+				enter(4);			
+			});		
+			$("#i1").click(function(){								
+				enter(0);
+			});
+			$("#i2").click(function(){			
+				enter(1);			
+			});
+			$("#i3").click(function(){					
+				enter(2);				
+			});
+			$("#i4").click(function(){		
+				enter(3);			
+			});
+			$("#i5").click(function(){			
+				enter(4);			
+			});															
+		});
+	})(jQuery);
+	</script>
+				
 </head>
 <body>
 	<div id="display">
 	</div>
 	<div id="header">
+	<h1 id="hed"></h1>
 	</div>
 	<div id="main">
+	<img src="img/Apogee-_0061_Layer-1.png" style="position: absolute;width: 100vw;">	
 	<div id="leftpane">
 		<div id="textbase">
+		<img id="img1" src="img/Apogee-_0046_Rectangle-8-copy.png" style="position:absolute;height:100%;width:100%">
+		<img id="img2" src="img/Apogee-_0047_Rectangle-8.png" style="position:absolute;height:100%;width:100%">		
+		<div id="name"><div></div></div>
+		<div id="dep"><div></div></div>
+		<div id="deptext"><div></div></div>
 		</div>
-		<div id="textstrip">
-		<div class="textele">
+		<div class="textstrip">
+		<ul id="scroller">
+		<li class="textele" id="t1">
+			<div class="text">
+			</div>
+			<div class="trect">
+			</div>
+		</li>
+		<li class="textele" id="t2">
+			<div class="text">
+			</div>
+			<div class="trect">
+			</div>			
+		</li>
+		<li class="textele" id="t3">
+			<div class="text">
+			</div>
+			<div class="trect">
+			</div>			
+		</li>
+		<li class="textele" id="t4">
+			<div class="text">
+			</div>
+			<div class="trect">
+			</div>					
+		</li>
+		<li class="textele" id="t5">
+			<div class="text">
+			</div>
+			<div class="trect">
+			</div>					
+		</li>							
+		</ul>
 		</div>
-		<div class="textele">
-		</div>
-		<div class="textele">
-		</div>
-		<div class="textele">
-		</div>
-		<div class="textele">
-		</div>								
-		</div>
+		 <img src="img/Apogee-_0025_Rectangle-14-copy-9.png" style="position: absolute;top: 8%;height: 87%;right: 0;">
 	</div>
 	<div id="rightpane">
 		<div id="imagebase">
+		<div id="leftbar">
+			<img src="img/Apogee-_0001s_0000_Shape-3.png" style="height:100%;width:60%;">
 		</div>
-		<div id="imagestrip">
-		<div class="imgele">
+		<div id="profile">
+			<img src="img/Apogee-_0001s_0004_Layer-3-copy-3.png" style="height:100%;width:100%;position:absolute;">
+			<img id="depi" src="./img/Apogee-_0001s_0006_Layer-7.png">
+		</div>
+		<div id="bottombar">
+			<img src="img/Apogee-_0001s_0001_Layer-7-copy-2.png" style="height:100%;width:100%;">
 		</div>	
-		<div class="imgele">
 		</div>
-		<div class="imgele">
+		<div class="imagestrip">
+		<ul id="scrolle">
+		<li class="imgele" id="i1">
+		</li>	
+		<li class="imgele" id="i2">
+		</li>
+		<li class="imgele" id="i3">
+		</li>
+		<li class="imgele" id="i4">
+		</li>
+		<li class="imgele" id="i5">
+		</li>											
+		</ul>
 		</div>
-		<div class="imgele">
-		</div>
-		<div class="imgele">
-		</div>											
-		</div>	
 	</div>
 	<div id="bot">
+	<div style="width: 40%;margin: 0 auto;">
+	<img id ="img3" src="img/Apogee-_0037_apo-copy.png" style="width:100%">
+	</div>	
 	</div>
 	</div>
 </body>
