@@ -1,10 +1,10 @@
-@import url('http://fonts.googleapis.com/css?family=Francois+One');
+@import url('http://fonts.googleapis.com/css?family=Chau+Philomene+One');
 
 html{
 
 	height:100%;
 	width:100%;
-	font-family: Francois One;
+	font-family: Chau Philomene One;
 	overflow: hidden;
 
 }
@@ -13,24 +13,29 @@ body{
 	height: 100%;
 	width:100%;
 	margin:0;
+	color:#a6a6a6;
+	word-wrap: normal;
 }
 
 h1{
 	margin:0;
-	font-size: 36px;
+	padding-top: 2%;
+	font-size: 40px;
 }
 
 #header{
 	position: relative;
-	height:15%;
+	text-align: center;
+	height:20%;
 	width:100%;
 	z-index: 0;
 
 }
 
 #main{
+
 	position: relative;
-	height:85%;
+	height:80%;
 	width:100%;
 	z-index: 0;
 }
@@ -38,7 +43,7 @@ h1{
 #leftpane{
 
 	height: 80%;
-	width: 50%;
+	width: 60%;
 	float: left;
 	padding: 0;
 	margin: 0;
@@ -48,7 +53,7 @@ h1{
 #rightpane{
 
 	height: 80%;
-	width: 50%;
+	width: 40%;
 	float: right;
 	padding: 0;
 	margin: 0;
@@ -67,9 +72,9 @@ h1{
 
 }
 
-#imagestrip{
-
-	width: 20%;
+.imagestrip{
+	background: url('../img/Apogee-_0043_Rectangle-12.png');
+	width: 30%;
 	height: 100%;
 	float: right;
 	margin: 0;
@@ -80,7 +85,7 @@ h1{
 
 #imagebase{
 
-	width: 80%;
+	width: 70%;
 	height: 100%;
 	float: left;
 	margin: 0;
@@ -89,8 +94,8 @@ h1{
 
 }
 
-#textstrip{
-
+.textstrip{
+	background: url('../img/Apogee-_0057_Rectangle-9.png');
 	width: 20%;
 	height: 100%;
 	float: right;
@@ -98,6 +103,15 @@ h1{
 	padding: 0;
 	position: relative;
 
+}
+
+.trect{
+
+	height:10%;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	background-image: url("../img/Apogee-_0007_Rectangle-15-copy-5.png");
 }
 
 #bot{
@@ -112,24 +126,23 @@ h1{
 }
 
 #display{
-	background("../img/back.png");
+	background-image: url("../img/back.png");
 	position: absolute;
 	height:100%;
 	width:100%;
 	z-index: -2;
 }
 
-.textele{
 
-	width:100%;
-	position: relative;
-	height: 20%;
-	margin: 0;
-	padding: 0;
+.text{
+	background-image: url("../img/text.png");
+	background-repeat: no-repeat;
+	height: 80%;
+	width: 100%;
 }
 
 .imgele{
-
+	background-image: url("../img/text.png");
 	width:100%;
 	position: relative;
 	height: 20%;
@@ -139,9 +152,126 @@ h1{
 }
 
 .layer{
-
 	height:100%;
 	width:100%;
 	margin: 0;
 	padding:0;
+}
+
+.textele {
+
+	width:100%;
+	position: relative;
+	height: 20%;
+	margin: 0;
+	padding: 0;
+}	
+
+#img1{
+	    position: relative;
+    z-index: 5;
+    width: 100%;
+    height: 80%;
+    top: 14%;
+
+}
+#img2{
+  position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 80%;
+    top: 18%;
+}
+
+#leftbar{
+
+	height: 100%;
+	padding-left: 5%;
+	width:10%;
+	position: relative;
+	float:left;
+
+}
+
+#bottombar{
+
+	height:40%;
+	width: 70%;
+	position: relative;
+	padding-top: 5%;
+	padding-right: 5%;
+	float:right;
+
+
+}
+
+#profile{
+
+	height:50%;
+	width: 70%;
+	position: relative;
+	margin-top: 5%;
+	margin-right: 5%;
+	float: right;
+
+}
+
+#name{
+
+	width:80%;
+	padding-top: 12%;
+	padding-left: 20%;
+	font-size: 24px;
+	height:10%;
+	text-align: center;
+	position: relative;
+}
+
+#dep{
+
+	width:80%;
+	height: 10%;
+	padding-left: 20%;
+	text-align: center;
+	position: relative;
+
+}
+#deptext{
+
+	width:80%;
+	padding-left: 20%;
+	height: 50%;
+	position: relative;
+}
+
+#depi{
+
+	width:100%;
+	height:100%;
+	display: none;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
